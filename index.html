@@ -120,6 +120,65 @@ footer a { color:var(--gold); }
 
 /* Floating WA */
 .float-wa { position:fixed; bottom:16px; left:16px; z-index:60; background:var(--wa); color:#062b16; font-weight:800; border-radius:999px; padding:12px 20px; font-size:.95rem; box-shadow:0 8px 24px rgba(37,211,102,.35); }
+
+/* ===== Light luxury theme ===== */
+:root {
+  --black:#faf8f3; --card:#ffffff; --card2:#f5f0e4;
+  --gold:#a8842c; --gold2:#8a6d1f; --cream:#26221a; --muted:#7c7462;
+  --wa:#1da851;
+}
+body { background:var(--black); color:var(--cream); letter-spacing:.1px; }
+header { background:rgba(250,248,243,.9); border-bottom:1px solid rgba(168,132,44,.22); }
+.logo { color:var(--gold); letter-spacing:3px; }
+nav.top a { color:var(--muted); }
+nav.top a:hover { color:var(--gold); }
+section { padding:64px 0; }
+.hero { background:radial-gradient(ellipse at 50% -10%, rgba(212,175,55,.16), transparent 60%); }
+.hero h1 .big { text-shadow:none; }
+.hero p.sub { color:var(--muted); }
+.btn-store { color:var(--gold); border-color:var(--gold); background:transparent; }
+.trust { color:var(--muted); }
+.step { background:var(--card); border:1px solid rgba(168,132,44,.16); box-shadow:0 2px 14px rgba(38,34,26,.04); }
+.step p { color:var(--muted); }
+.filters button { background:var(--card); color:var(--muted); border:1px solid rgba(168,132,44,.3); }
+.filters button.active { background:var(--gold); color:#fff; border-color:var(--gold); }
+.card { background:var(--card); border:1px solid rgba(168,132,44,.16); box-shadow:0 2px 14px rgba(38,34,26,.04); }
+.card-body h3 { color:var(--gold2); }
+.card-body h3 a:hover { color:var(--gold); }
+.inspired { color:var(--muted); border-right-color:var(--gold); }
+.desc { color:var(--cream); opacity:.85; }
+.notes { background:var(--card2); }
+.note-row span { color:var(--gold); }
+.note-row p { color:var(--muted); }
+.btn-order { background:rgba(29,168,81,.05); border:1px solid rgba(29,168,81,.4); }
+.btn-order .price { color:var(--cream); }
+.btn-order .wa { color:var(--wa); }
+.offer { background:linear-gradient(135deg, rgba(212,175,55,.12), rgba(212,175,55,.03)); border:1px solid rgba(168,132,44,.35); }
+.offer h2 { color:var(--gold); }
+.offer p { color:var(--muted); }
+.info { background:var(--card); border:1px solid rgba(168,132,44,.16); }
+.info h3 { color:var(--gold); }
+.info ul { color:var(--muted); }
+.photos img { border:1px solid rgba(168,132,44,.25); }
+.review { background:var(--card); border:1px solid rgba(168,132,44,.16); }
+.review .stars { color:var(--gold); }
+.review .who { color:var(--muted); }
+footer { border-top:1px solid rgba(168,132,44,.2); color:var(--muted); }
+footer a { color:var(--gold); }
+.sec-title h2 { color:var(--gold); }
+.sec-title p { color:var(--muted); }
+/* Product page light */
+.p-img { border:1px solid rgba(168,132,44,.22); background:#000; }
+.p-order { background:var(--card); border:1px solid rgba(168,132,44,.22); box-shadow:0 2px 14px rgba(38,34,26,.04); }
+.p-order h2 { color:var(--gold); }
+.p-info h1 { color:var(--gold2); }
+.p-ship { color:var(--muted); }
+.crumbs a { color:var(--muted); }
+.crumbs a:hover { color:var(--gold); }
+
+a.card-img { display:block; }
+.card-body h3 a { color:inherit; }
+.card-body h3 a:hover { color:var(--gold); }
 </style>
 </head>
 <body>
@@ -182,9 +241,9 @@ footer a { color:var(--gold); }
     </div>
     <div class="grid" id="grid">
       <article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/megamare.webp" alt="عطر Megamare" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/megamare.html"><img src="img/megamare.webp" alt="عطر Megamare" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Megamare</h3>
+        <h3><a href="p/megamare.html">Megamare</a></h3>
         <div class="inspired">مستوحى من Orto Parisi Megamare</div>
         <p class="desc">قوة المحيط في زجاجة؛ برغموت وليمون على قلب أعشاب بحرية وقاعدة مسك وأمبروكسان بثبات أسطوري.</p>
         <div class="notes">
@@ -195,9 +254,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Megamare+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Megamare+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/baccarat-rouge-540.webp" alt="عطر Baccarat Rouge 540" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/baccarat-rouge-540.html"><img src="img/baccarat-rouge-540.webp" alt="عطر Baccarat Rouge 540" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Baccarat Rouge 540</h3>
+        <h3><a href="p/baccarat-rouge-540.html">Baccarat Rouge 540</a></h3>
         <div class="inspired">مستوحى من Maison Francis Kurkdjian</div>
         <p class="desc">التوقيع العطري الأشهر في العالم؛ زعفران وياسمين على قلب عنبري مضيء وقاعدة أرز فاخرة.</p>
         <div class="notes">
@@ -208,9 +267,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Baccarat+Rouge+540+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Baccarat+Rouge+540+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/suv.webp" alt="عطر SUV" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/suv.html"><img src="img/suv.webp" alt="عطر SUV" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>SUV</h3>
+        <h3><a href="p/suv.html">SUV</a></h3>
         <div class="inspired">مستوحى من Dior Sauvage</div>
         <p class="desc">الوحش المنعش الأشهر؛ برغموت كالابريا وفلفل على قلب لافندر وقاعدة أمبروكسان نظيفة.</p>
         <div class="notes">
@@ -221,9 +280,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+SUV+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+SUV+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/good-girl.webp" alt="عطر Good Girl" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/good-girl.html"><img src="img/good-girl.webp" alt="عطر Good Girl" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Good Girl</h3>
+        <h3><a href="p/good-girl.html">Good Girl</a></h3>
         <div class="inspired">مستوحى من Carolina Herrera Good Girl</div>
         <p class="desc">تباين جريء بين القهوة واللوز في الافتتاحية وزهور بيضاء في القلب وقاعدة كاكاو وتونكا ساحرة.</p>
         <div class="notes">
@@ -234,9 +293,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Good+Girl+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A5%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٥٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Good+Girl+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A2%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٢٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/althair.webp" alt="عطر ALthair" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/althair.html"><img src="img/althair.webp" alt="عطر ALthair" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>ALthair</h3>
+        <h3><a href="p/althair.html">ALthair</a></h3>
         <div class="inspired">مستوحى من Parfums de Marly Althaïr</div>
         <p class="desc">فانيليا شرقية فاخرة بدفء القرفة والهيل على قاعدة برالينيه سكرية. ثبات وفوحان يليق بأهم مناسباتك.</p>
         <div class="notes">
@@ -247,9 +306,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+ALthair+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+ALthair+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/ombre-nomade.webp" alt="عطر Ombre Nomade" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/ombre-nomade.html"><img src="img/ombre-nomade.webp" alt="عطر Ombre Nomade" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Ombre Nomade</h3>
+        <h3><a href="p/ombre-nomade.html">Ombre Nomade</a></h3>
         <div class="inspired">مستوحى من Louis Vuitton Ombre Nomade</div>
         <p class="desc">ملك العود الشرقي؛ عود فاخر مع ورد وزعفران وتوت العليق وبخور. عطر السهرات الكبيرة.</p>
         <div class="notes">
@@ -258,9 +317,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Ombre+Nomade+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Ombre+Nomade+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/black-afgano.webp" alt="عطر بلاك أفغانو" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/black-afgano.html"><img src="img/black-afgano.webp" alt="عطر بلاك أفغانو" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>بلاك أفغانو</h3>
+        <h3><a href="p/black-afgano.html">بلاك أفغانو</a></h3>
         <div class="inspired">مستوحى من Nasomatto Black Afgano</div>
         <p class="desc">عطر نيش جريء وغامض؛ زعفران وأعشاب خضراء على قلب تبغ وقهوة وقاعدة عود وبخور كثيفة.</p>
         <div class="notes">
@@ -271,9 +330,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%A8%D9%84%D8%A7%D9%83+%D8%A3%D9%81%D8%BA%D8%A7%D9%86%D9%88+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A9%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٩٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%A8%D9%84%D8%A7%D9%83+%D8%A3%D9%81%D8%BA%D8%A7%D9%86%D9%88+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A4%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٤٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/burberry-her.webp" alt="عطر Burberry Her" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/burberry-her.html"><img src="img/burberry-her.webp" alt="عطر Burberry Her" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Burberry Her</h3>
+        <h3><a href="p/burberry-her.html">Burberry Her</a></h3>
         <div class="inspired">مستوحى من Burberry Her</div>
         <p class="desc">انفجار فواكه حمراء مبهج؛ فراولة وتوت وكرز على قلب ياسمين وبنفسج وقاعدة مسك وفانيليا ناعمة.</p>
         <div class="notes">
@@ -284,9 +343,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Burberry+Her+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Burberry+Her+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/la-vie-est-belle.webp" alt="عطر La Vie Est Belle" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/la-vie-est-belle.html"><img src="img/la-vie-est-belle.webp" alt="عطر La Vie Est Belle" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>La Vie Est Belle</h3>
+        <h3><a href="p/la-vie-est-belle.html">La Vie Est Belle</a></h3>
         <div class="inspired">مستوحى من Lancôme La Vie Est Belle</div>
         <p class="desc">نشيد السعادة الأنثوي؛ كشمش أسود وكمثرى على قلب سوسن وياسمين وقاعدة برالينيه وفانيليا.</p>
         <div class="notes">
@@ -297,9 +356,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+La+Vie+Est+Belle+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+La+Vie+Est+Belle+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/libre.webp" alt="عطر Libre" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/libre.html"><img src="img/libre.webp" alt="عطر Libre" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Libre</h3>
+        <h3><a href="p/libre.html">Libre</a></h3>
         <div class="inspired">مستوحى من Yves Saint Laurent Libre</div>
         <p class="desc">عطر الحرية الفرنسي؛ لافندر وماندرين على قلب زهر برتقال وياسمين وقاعدة فانيليا مدغشقر.</p>
         <div class="notes">
@@ -310,9 +369,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+libre+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+libre+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/one-million.webp" alt="عطر One Million" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/one-million.html"><img src="img/one-million.webp" alt="عطر One Million" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>One Million</h3>
+        <h3><a href="p/one-million.html">One Million</a></h3>
         <div class="inspired">مستوحى من Rabanne 1 Million</div>
         <p class="desc">سبيكة الذهب الشهيرة؛ ماندرين دموي ونعناع على قلب قرفة وورد وقاعدة جلد وعنبر.</p>
         <div class="notes">
@@ -323,9 +382,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+One+Million+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+One+Million+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/invictus.webp" alt="عطر Invictus" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/invictus.html"><img src="img/invictus.webp" alt="عطر Invictus" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Invictus</h3>
+        <h3><a href="p/invictus.html">Invictus</a></h3>
         <div class="inspired">مستوحى من Rabanne Invictus</div>
         <p class="desc">عطر الأبطال المنعش؛ نوتات بحرية وجريب فروت على قلب غار وياسمين وقاعدة خشبية عنبرية.</p>
         <div class="notes">
@@ -336,9 +395,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Invictus+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Invictus+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/le-male-elixir.webp" alt="عطر Le Male Elixir" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/le-male-elixir.html"><img src="img/le-male-elixir.webp" alt="عطر Le Male Elixir" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Le Male Elixir</h3>
+        <h3><a href="p/le-male-elixir.html">Le Male Elixir</a></h3>
         <div class="inspired">مستوحى من Jean Paul Gaultier Le Male Elixir</div>
         <p class="desc">لافندر ونعناع منعش يذوب في فانيليا وبنزوين وقاعدة عسل وتبغ؛ دفء لا يقاوم.</p>
         <div class="notes">
@@ -349,9 +408,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Le+Male+Elixir+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Le+Male+Elixir+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/dior-homme-parfum.webp" alt="عطر Dior Homme Parfum" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/dior-homme-parfum.html"><img src="img/dior-homme-parfum.webp" alt="عطر Dior Homme Parfum" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Dior Homme Parfum</h3>
+        <h3><a href="p/dior-homme-parfum.html">Dior Homme Parfum</a></h3>
         <div class="inspired">مستوحى من Dior Homme Parfum</div>
         <p class="desc">أيقونة الأناقة الرجالية؛ سوسن توسكاني وبرتقال إيطالي على قلب جلد وورد وقاعدة خشبية عميقة.</p>
         <div class="notes">
@@ -362,9 +421,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Dior+Homme+Parfum+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Dior+Homme+Parfum+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/velvet-cask.webp" alt="عطر Velvet Cask" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/velvet-cask.html"><img src="img/velvet-cask.webp" alt="عطر Velvet Cask" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Velvet Cask</h3>
+        <h3><a href="p/velvet-cask.html">Velvet Cask</a></h3>
         <div class="inspired">مستوحى من Kilian Angels' Share</div>
         <p class="desc">حصة الملائكة؛ كونياك فاخر على قلب قرفة وتونكا وقاعدة برالينيه وفانيليا وصندل.</p>
         <div class="notes">
@@ -375,9 +434,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Velvet+cask+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Velvet+cask+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/bianco-latte.webp" alt="عطر Bianco Latte" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/bianco-latte.html"><img src="img/bianco-latte.webp" alt="عطر Bianco Latte" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Bianco Latte</h3>
+        <h3><a href="p/bianco-latte.html">Bianco Latte</a></h3>
         <div class="inspired">مستوحى من Giardini di Toscana Bianco Latte</div>
         <p class="desc">حلوى فاخرة في زجاجة؛ كراميل ذائب على قلب عسل وقاعدة فانيليا ومسك أبيض ناعم.</p>
         <div class="notes">
@@ -388,9 +447,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Bianco+Latte+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Bianco+Latte+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/gucci-rush.webp" alt="عطر Gucci Rush" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/gucci-rush.html"><img src="img/gucci-rush.webp" alt="عطر Gucci Rush" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Gucci Rush</h3>
+        <h3><a href="p/gucci-rush.html">Gucci Rush</a></h3>
         <div class="inspired">مستوحى من Gucci Rush</div>
         <p class="desc">كلاسيكية التسعينات الجريئة؛ خوخ وجاردينيا على قلب ورد دمشقي وقاعدة باتشولي وفانيليا.</p>
         <div class="notes">
@@ -401,9 +460,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Gucci+Rush+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Gucci+Rush+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/elie-saab.webp" alt="عطر Elie Saab" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/elie-saab.html"><img src="img/elie-saab.webp" alt="عطر Elie Saab" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Elie Saab</h3>
+        <h3><a href="p/elie-saab.html">Elie Saab</a></h3>
         <div class="inspired">مستوحى من Elie Saab Le Parfum</div>
         <p class="desc">زهري شرقي مشرق يحتفي بالأنوثة؛ زهر البرتقال الأفريقي مع قلب ياسمين وقاعدة عسل أبيض دافئة.</p>
         <div class="notes">
@@ -414,9 +473,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Elie+Saab+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Elie+Saab+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/violia.webp" alt="عطر Violia" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/violia.html"><img src="img/violia.webp" alt="عطر Violia" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Violia</h3>
+        <h3><a href="p/violia.html">Violia</a></h3>
         <div class="inspired">مستوحى من Dolce & Gabbana The One</div>
         <p class="desc">أنوثة دافئة لا تُقاوم؛ خوخ وليتشي وماندرين على قلب ياسمين وزنبق وقاعدة فانيليا وعنبر.</p>
         <div class="notes">
@@ -427,9 +486,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Violia+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Violia+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/versace-bright-crystal.webp" alt="عطر Versace Bright Crystal" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/versace-bright-crystal.html"><img src="img/versace-bright-crystal.webp" alt="عطر Versace Bright Crystal" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Versace Bright Crystal</h3>
+        <h3><a href="p/versace-bright-crystal.html">Versace Bright Crystal</a></h3>
         <div class="inspired">مستوحى من Versace Bright Crystal</div>
         <p class="desc">باقة زهور ندية؛ يوزو ورمان على قلب فاوانيا ولوتس وقاعدة مسك ناعمة مشرقة.</p>
         <div class="notes">
@@ -440,9 +499,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Versace+Bright+Crystal+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Versace+Bright+Crystal+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/midnight-rose.webp" alt="عطر Midnight Rose" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/midnight-rose.html"><img src="img/midnight-rose.webp" alt="عطر Midnight Rose" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Midnight Rose</h3>
+        <h3><a href="p/midnight-rose.html">Midnight Rose</a></h3>
         <div class="inspired">مستوحى من Lancôme Trésor Midnight Rose</div>
         <p class="desc">رومانسية الليل؛ توت العليق والورد على قلب فاوانيا وفلفل وردي وقاعدة فانيليا ومسك.</p>
         <div class="notes">
@@ -453,9 +512,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Midnight+Rose+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Midnight+Rose+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/flame-of-tropics.webp" alt="عطر Flame of Tropics" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/flame-of-tropics.html"><img src="img/flame-of-tropics.webp" alt="عطر Flame of Tropics" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Flame of Tropics</h3>
+        <h3><a href="p/flame-of-tropics.html">Flame of Tropics</a></h3>
         <div class="inspired">مستوحى من Stéphane Humbert Lucas God of Fire</div>
         <p class="desc">مانجو استوائية وزنجبيل حار على قلب ياسمين وقاعدة عود وعنبر؛ انتعاش وفخامة في عطر واحد.</p>
         <div class="notes">
@@ -466,9 +525,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Flame+of+Tropics+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Flame+of+Tropics+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="unisex">
-      <div class="card-img"><img src="img/ameer-al-oud.webp" alt="عطر أمير العود" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/ameer-al-oud.html"><img src="img/ameer-al-oud.webp" alt="عطر أمير العود" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>أمير العود</h3>
+        <h3><a href="p/ameer-al-oud.html">أمير العود</a></h3>
         <div class="inspired">مستوحى من Lattafa Ameer Al Oudh Intense Oud</div>
         <p class="desc">عود شرقي مكثف بروح عصرية؛ خشونة العود تلتقي بنعومة الفانيليا والسكر على قاعدة صندل بخورية.</p>
         <div class="notes">
@@ -479,9 +538,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%A7%D9%85%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%88%D8%AF+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%A7%D9%85%D9%8A%D8%B1+%D8%A7%D9%84%D8%B9%D9%88%D8%AF+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/swye.webp" alt="عطر S.W.Y.E" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/swye.html"><img src="img/swye.webp" alt="عطر S.W.Y.E" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>S.W.Y.E</h3>
+        <h3><a href="p/swye.html">S.W.Y.E</a></h3>
         <div class="inspired">مستوحى من Emporio Armani Stronger With You</div>
         <p class="desc">دفء الكستناء والسكر مع لافندر وقاعدة فانيليا مدخنة؛ عطر الشتاء الرومانسي.</p>
         <div class="notes">
@@ -492,9 +551,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+S.W.Y.E+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+S.W.Y.E+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/stronger-with-you.webp" alt="عطر Stronger With You" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/stronger-with-you.html"><img src="img/stronger-with-you.webp" alt="عطر Stronger With You" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Stronger With You</h3>
+        <h3><a href="p/stronger-with-you.html">Stronger With You</a></h3>
         <div class="inspired">مستوحى من Emporio Armani — مطابق للأوريجنال</div>
         <p class="desc">النسخة المطابقة للأوريجنال؛ كستناء وسكر مع لافندر وقاعدة فانيليا مدخنة.</p>
         <div class="notes">
@@ -505,9 +564,9 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Stronger+With+You+%D9%85%D8%B7%D8%A7%D8%A8%D9%82+%D9%84%D9%84%D8%A3%D9%88%D8%B1%D9%8A%D8%AC%D9%86%D8%A7%D9%84+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A4%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٤٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Stronger+With+You+%D9%85%D8%B7%D8%A7%D8%A8%D9%82+%D9%84%D9%84%D8%A3%D9%88%D8%B1%D9%8A%D8%AC%D9%86%D8%A7%D9%84+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A8%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٨٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/212-vip.webp" alt="عطر 212 VIP" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/212-vip.html"><img src="img/212-vip.webp" alt="عطر 212 VIP" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>212 VIP</h3>
+        <h3><a href="p/212-vip.html">212 VIP</a></h3>
         <div class="inspired">مستوحى من Carolina Herrera 212 VIP Men</div>
         <p class="desc">روح الحفلات؛ باشن فروت ولايم وزنجبيل على قلب فودكا ونعناع وقاعدة عنبر وجلد.</p>
         <div class="notes">
@@ -518,99 +577,99 @@ footer a { color:var(--gold); }
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+212+vip+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+212+vip+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/dii.webp" alt="عطر Dii" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/dii.html"><img src="img/dii.webp" alt="عطر Dii" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Dii</h3>
+        <h3><a href="p/dii.html">Dii</a></h3>
         
         <p class="desc">عطر نسائي فاكهي زهري ناعم، بشخصية حلوة تصلح لليومي والمناسبات.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Dii+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Dii+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/diva.webp" alt="عطر ديڤا" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/diva.html"><img src="img/diva.webp" alt="عطر ديڤا" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>ديڤا</h3>
+        <h3><a href="p/diva.html">ديڤا</a></h3>
         
         <p class="desc">عطر نسائي فواكه سكري بحضور ساحر مصمم لليالي والمناسبات.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%AF%D9%8A%DA%A4%D8%A7+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D8%AF%D9%8A%DA%A4%D8%A7+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="women">
-      <div class="card-img"><img src="img/mid-g.webp" alt="عطر Mid - G" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/mid-g.html"><img src="img/mid-g.webp" alt="عطر Mid - G" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Mid - G</h3>
+        <h3><a href="p/mid-g.html">Mid - G</a></h3>
         
         <p class="desc">ميكس شرقي فاكهي فاخر بلمسة غامضة لليالي والمناسبات الخاصة.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Mid+-+G+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Mid+-+G+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/spiced-frost.webp" alt="عطر Spiced Frost" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/spiced-frost.html"><img src="img/spiced-frost.webp" alt="عطر Spiced Frost" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Spiced Frost</h3>
+        <h3><a href="p/spiced-frost.html">Spiced Frost</a></h3>
         
         <p class="desc">عطر رجالي توابلي منعش بشخصية واضحة، يناسب اليومي والمناسبات.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Spiced+Frost+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Spiced+Frost+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/murelle-men.webp" alt="عطر موريل مان" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/murelle-men.html"><img src="img/murelle-men.webp" alt="عطر موريل مان" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>موريل مان</h3>
+        <h3><a href="p/murelle-men.html">موريل مان</a></h3>
         
         <p class="desc">خلطة موريل الرجالية الخاصة؛ عطر يومي بثبات عالٍ وحضور واثق.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D9%88%D8%B1%D9%8A%D9%84+%D9%85%D8%A7%D9%86+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D9%88%D8%B1%D9%8A%D9%84+%D9%85%D8%A7%D9%86+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/murelle-vip.webp" alt="عطر Murelle VIP" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/murelle-vip.html"><img src="img/murelle-vip.webp" alt="عطر Murelle VIP" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Murelle VIP</h3>
+        <h3><a href="p/murelle-vip.html">Murelle VIP</a></h3>
         
         <p class="desc">خلطة موريل الفاخرة للمناسبات؛ حضور قوي وثبات يدوم لساعات.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Murelle+Vip+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A7%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٧٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Murelle+Vip+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="men">
-      <div class="card-img"><img src="img/murelle-sport.webp" alt="عطر Murelle Sport" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/murelle-sport.html"><img src="img/murelle-sport.webp" alt="عطر Murelle Sport" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>Murelle Sport</h3>
+        <h3><a href="p/murelle-sport.html">Murelle Sport</a></h3>
         
         <p class="desc">خلطة موريل الرياضية المنعشة؛ رفيقك اليومي في الشغل والجيم والمشاوير.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Murelle+Sport+%D9%85%D9%82%D8%A7%D8%B3+100+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A6%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">100 مل</span><span class="price">٦٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+Murelle+Sport+%D9%85%D9%82%D8%A7%D8%B3+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A3%D9%A0%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">50 مل</span><span class="price">٣٠٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="musk">
-      <div class="card-img"><img src="img/musk-abyad.webp" alt="عطر مسك أبيض" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/musk-abyad.html"><img src="img/musk-abyad.webp" alt="عطر مسك أبيض" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>مسك أبيض</h3>
+        <h3><a href="p/musk-abyad.html">مسك أبيض</a></h3>
         
         <p class="desc">مسك أبيض نقي؛ إحساس النظافة والنعومة الذي يدوم طوال اليوم.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%A7%D8%A8%D9%8A%D8%B6+%D9%85%D9%82%D8%A7%D8%B3+%D8%B1%D8%A8%D8%B9+%D8%AA%D9%88%D9%84%D8%A9+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">ربع تولة</span><span class="price">٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%A7%D8%A8%D9%8A%D8%B6+%D9%85%D9%82%D8%A7%D8%B3+%D8%B2%D8%AC%D8%A7%D8%AC%D8%A9+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A2%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">زجاجة 50 مل</span><span class="price">٢٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="musk">
-      <div class="card-img"><img src="img/musk-tahara.webp" alt="عطر مسك الطهارة" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/musk-tahara.html"><img src="img/musk-tahara.webp" alt="عطر مسك الطهارة" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>مسك الطهارة</h3>
+        <h3><a href="p/musk-tahara.html">مسك الطهارة</a></h3>
         
         <p class="desc">مسك الطهارة الكلاسيكي؛ ثابت ونظيف ومناسب للجميع.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%A7%D9%84%D8%B7%D9%87%D8%A7%D8%B1%D8%A9+%D9%85%D9%82%D8%A7%D8%B3+%D8%B1%D8%A8%D8%B9+%D8%AA%D9%88%D9%84%D8%A9+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">ربع تولة</span><span class="price">٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%A7%D9%84%D8%B7%D9%87%D8%A7%D8%B1%D8%A9+%D9%85%D9%82%D8%A7%D8%B3+%D8%B2%D8%AC%D8%A7%D8%AC%D8%A9+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A2%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">زجاجة 50 مل</span><span class="price">٢٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="musk">
-      <div class="card-img"><img src="img/musk-roman.webp" alt="عطر مسك رمان" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/musk-roman.html"><img src="img/musk-roman.webp" alt="عطر مسك رمان" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>مسك رمان</h3>
+        <h3><a href="p/musk-roman.html">مسك رمان</a></h3>
         
         <p class="desc">مسك ناعم بلمسة رمان حلوة ومنعشة.</p>
         
         <div class="sizes"><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%B1%D9%85%D8%A7%D9%86+%D9%85%D9%82%D8%A7%D8%B3+%D8%B1%D8%A8%D8%B9+%D8%AA%D9%88%D9%84%D8%A9+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">ربع تولة</span><span class="price">٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a><a class="btn-order" href="https://wa.me/201019098061?text=%D8%A3%D9%86%D8%A7+%D8%B9%D8%A7%D9%8A%D8%B2+%D8%A3%D8%B7%D9%84%D8%A8+%D8%B9%D8%B7%D8%B1+%D9%85%D8%B3%D9%83+%D8%B1%D9%85%D8%A7%D9%86+%D9%85%D9%82%D8%A7%D8%B3+%D8%B2%D8%AC%D8%A7%D8%AC%D8%A9+50+%D9%85%D9%84+%D8%A8%D8%B3%D8%B9%D8%B1+%D9%A2%D9%A5%D9%A0+%D8%AC%D9%86%D9%8A%D9%87" target="_blank" rel="noopener"><span class="size">زجاجة 50 مل</span><span class="price">٢٥٠ جنيه</span><span class="wa">اطلب واتساب</span></a></div>
       </div>
     </article><article class="card" data-cat="musk">
-      <div class="card-img"><img src="img/musk-sabaya.webp" alt="عطر مسك صبايا" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></div>
+      <a class="card-img" href="p/musk-sabaya.html"><img src="img/musk-sabaya.webp" alt="عطر مسك صبايا" loading="lazy"><div class="offer-badge">داخل عرض الـ ٣ بـ ٨٥٠</div></a>
       <div class="card-body">
-        <h3>مسك صبايا</h3>
+        <h3><a href="p/musk-sabaya.html">مسك صبايا</a></h3>
         
         <p class="desc">مسك نسائي ناعم ورقيق، مفضل للصبايا.</p>
         
