@@ -68,6 +68,37 @@ footer .f-links { display:flex; flex-direction:column; gap:6px; margin:10px 0; }
 footer a { color:var(--gold); }
 .wa-alt { text-align:center; margin-top:14px; font-size:.88rem; color:var(--muted); }
 .wa-alt a { color:var(--wa); font-weight:800; }
+
+/* ===== Light luxury theme ===== */
+:root {
+  --black:#faf8f3; --card:#ffffff; --card2:#f5f0e4;
+  --gold:#a8842c; --gold2:#8a6d1f; --cream:#26221a; --muted:#7c7462;
+  --wa:#1da851;
+}
+body { background:var(--black); color:var(--cream); }
+header { background:rgba(250,248,243,.9); border-bottom:1px solid rgba(168,132,44,.22); }
+.logo { color:var(--gold); letter-spacing:3px; }
+nav.top a { color:var(--muted); }
+nav.top a:hover { color:var(--gold); }
+.sec-title h1 { color:var(--gold); }
+.sec-title p { color:var(--muted); }
+form.card { background:var(--card); border:1px solid rgba(168,132,44,.16); box-shadow:0 2px 14px rgba(38,34,26,.04); }
+.field input, .field select, .field textarea { background:var(--card2); color:var(--cream); border:1px solid rgba(168,132,44,.3); }
+.field input:focus, .field select:focus, .field textarea:focus { border-color:var(--gold); }
+.field .hint { color:var(--muted); }
+.total-box { background:var(--card2); border:1px dashed rgba(168,132,44,.45); }
+.total-box .t { color:var(--muted); }
+.total-box .v { color:var(--gold2); }
+.ship-note { background:var(--card2); color:var(--muted); }
+.btn-gold { background:var(--gold); color:#fff; }
+.btn-store { color:var(--gold); border-color:var(--gold); background:transparent; }
+.success { background:var(--card); border:1px solid var(--gold); }
+.success h2 { color:var(--gold); }
+.success p { color:var(--muted); }
+.fail { background:#fdf0ee; border:1px solid #d9a59a; color:#a94442; }
+.wa-alt { color:var(--muted); }
+footer { border-top:1px solid rgba(168,132,44,.2); color:var(--muted); }
+footer a { color:var(--gold); }
 </style>
 </head>
 <body>
@@ -76,10 +107,11 @@ footer a { color:var(--gold); }
   <div class="container">
     <a class="logo" href="index.html"><img src="img/logo.png" alt="Murelle Perfume"> MURELLE</a>
     <nav class="top">
-      <a href="index.html#catalog">كل العطور</a>
+      <a href="index.html#catalog">العطور</a>
       <a href="index.html#offer">العرض</a>
       <a href="index.html#shipping">الشحن والدفع</a>
       <a href="index.html#reviews">آراء العملاء</a>
+      <a href="order.html" style="color:var(--gold)">اطلب أونلاين</a>
     </nav>
   </div>
 </header>
