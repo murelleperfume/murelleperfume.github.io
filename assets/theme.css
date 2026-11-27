@@ -838,12 +838,12 @@ section.alt{background:var(--surface);}
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-sm);
   padding:9px 6px;transition:background .15s,border-color .15s;
 }
-.card .btn-order{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:1px 4px;padding:9px 4px;}
+.card .btn-order{flex-direction:column;flex-wrap:nowrap;justify-content:center;gap:1px;padding:9px 6px;}
 .btn-order:hover{background:#fff;border-color:var(--ink);}
 .btn-order .size{font-size:11.5px;font-weight:600;color:var(--ink);line-height:1.5;}
 .btn-order .price{font-size:12px;font-weight:600;color:var(--ink);line-height:1.5;}
 .btn-order .wa{font-size:9px;color:var(--muted);letter-spacing:.2px;}
-.card .btn-order .size,.card .btn-order .price{font-size:9.5px;font-weight:300;}
+.card .btn-order .size,.card .btn-order .price{font-size:10px;font-weight:400;}
 .card .btn-order .wa{flex-basis:100%;text-align:center;}
 
 /* ---------- info / shipping ---------- */
