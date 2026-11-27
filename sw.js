@@ -1,4 +1,4 @@
-const CACHE = 'murelle-v1';
+const CACHE = 'murelle-v2';
 const SHELL = ['/', '/index.html', '/order.html', '/assets/theme.css', '/img/logo.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
