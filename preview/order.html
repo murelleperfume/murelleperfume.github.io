@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta name="robots" content="noindex,nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اطلب أونلاين | Murelle Perfume موريل</title>
+<meta name="description" content="اطلب عطرك من موريل أونلاين: املأ البيانات وهنوصلك للتأكيد. توصيل لكل المحافظات وعرض ٣ عطور بـ ٨٥٠ جنيه.">
+<link rel="canonical" href="https://murelleperfume.github.io/order.html">
+<link rel="icon" href="https://murelleperfume.github.io/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="topbar"><a href="index.html#offer">عرض ٣ عطور بـ ٨٥٠ جنيه &middot; توصيل لكل المحافظات &middot; استرجاع خلال ١٤ يوم</a></div>
+
+<header>
+  <div class="container">
+    <a class="logo" href="index.html"><img src="https://murelleperfume.github.io/img/logo.png" alt="Murelle Perfume"> MURELLE</a>
+    <nav class="top">
+      <a href="index.html#catalog">العطور</a>
+      <a href="index.html#offer">العرض</a>
+      <a href="index.html#shipping">الشحن والدفع</a>
+      <a href="index.html#reviews">آراء العملاء</a>
+      <a href="order.html" style="color:var(--gold)">اطلب أونلاين</a>
+    </nav>
+    <a class="header-cta" href="https://wa.me/201019098061" target="_blank" rel="noopener">واتساب</a>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="sec-title">
+      <h1>اطلب أونلاين</h1>
+      <p>املأ بياناتك وهنوصلك على رقمك لتأكيد الأوردر. الدفع عند الاستلام أو بأي طريقة تناسبك.</p>
+    </div>
+
+    <form id="orderForm" class="card" novalidate>
+      <div class="field" id="f-product">
+        <label for="product">العطر <span class="req">*</span></label>
+        <select id="product" name="product" required></select>
+      </div>
+
+      <div class="row2">
+        <div class="field" id="f-size">
+          <label for="size">المقاس <span class="req">*</span></label>
+          <select id="size" name="size" required></select>
+        </div>
+        <div class="field" id="f-qty">
+          <label for="qty">الكمية <span class="req">*</span></label>
+          <input type="number" id="qty" name="qty" min="1" max="20" value="1" required>
+        </div>
+      </div>
+
+      <div class="total-box">
+        <span class="t">الإجمالي (غير شامل الشحن)</span>
+        <span class="v" id="total">—</span>
+      </div>
+
+      <div class="field" id="f-name">
+        <label for="name">الاسم <span class="req">*</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <div class="err">من فضلك اكتب اسمك.</div>
+      </div>
+
+      <div class="field" id="f-phone">
+        <label for="phone">رقم الموبايل <span class="req">*</span></label>
+        <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="01xxxxxxxxx" required>
+        <div class="hint">هنتواصل معاك على الرقم ده لتأكيد الأوردر.</div>
+        <div class="err">اكتب رقم موبايل مصري صحيح (11 رقم ويبدأ بـ 01).</div>
+      </div>
+
+      <div class="row2">
+        <div class="field" id="f-gov">
+          <label for="gov">المحافظة <span class="req">*</span></label>
+          <select id="gov" name="gov" required>
+            <option value="">اختار المحافظة</option>
+          </select>
+          <div class="err">اختار محافظتك.</div>
+        </div>
+        <div class="field" id="f-city">
+          <label for="city">المدينة / المركز</label>
+          <input type="text" id="city" name="city">
+        </div>
+      </div>
+
+      <div class="field" id="f-address">
+        <label for="address">العنوان بالتفصيل <span class="req">*</span></label>
+        <textarea id="address" name="address" placeholder="الشارع، رقم العمارة، الدور، علامة مميزة" required></textarea>
+        <div class="err">اكتب عنوانك بالتفصيل عشان التوصيل.</div>
+      </div>
+
+      <div class="field">
+        <label for="notes">ملاحظات (اختياري)</label>
+        <textarea id="notes" name="notes" placeholder="أي تفاصيل تانية تحب تقولها"></textarea>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label>لا تملأ هذا الحقل<input type="text" id="company" name="company" tabindex="-1" autocomplete="off"></label>
+      </div>
+      <input type="hidden" id="ts" name="ts" value="">
+
+      <div class="ship-note" id="shipNote">طنطا: شحن ٣٠ جنيه وتوصيل نفس اليوم · باقي المحافظات: ٢–٥ أيام عمل · تأكيد الأوردر بيكون بالتواصل معاك الأول.</div>
+
+      <div class="fail" id="failBox">حصلت مشكلة أثناء إرسال الأوردر. جرب تاني، أو اطلب على واتساب.</div>
+
+      <button type="submit" class="btn btn-gold" id="submitBtn">تأكيد الأوردر</button>
+    </form>
+
+    <div class="success" id="successBox">
+      <h2>تم استلام أوردرك ✓</h2>
+      <p>شكراً ليك! هنتواصل معاك على رقمك في أقرب وقت لتأكيد الأوردر وتفاصيل الشحن.</p>
+      <a class="btn btn-store" href="index.html#catalog">شوف باقي العطور</a>
+    </div>
+
+    <p class="wa-alt">تفضل تطلب على واتساب؟ <a href="https://wa.me/201019098061" target="_blank" rel="noopener">كلمنا من هنا</a> · عرض ٣ عطور بـ ٨٥٠ جنيه متاح على واتساب.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo" style="justify-content:center"><img src="https://murelleperfume.github.io/img/logo.png" alt="Murelle Perfume"> MURELLE</div>
+    <div class="f-links">
+      <a href="https://wa.me/201019098061" target="_blank" rel="noopener">واتساب: 01019098061</a>
+      <a href="https://murelleperfume.baseet.cc" target="_blank" rel="noopener">المتجر الأساسي: murelleperfume.baseet.cc</a>
+      <span dir="ltr">mhmdmedo71@gmail.com</span>
+    </div>
+    <p>© 2026 Murelle Perfumes. كل الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script>
+var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrO1Z59eNWMAhF1Q54x41pNLnFffnCf4UgqhUVOF9h2AMTUJpI6XhJsnJ9G6iwUsw/exec';
+var PRODUCTS = [{"slug": "212-vip", "name": "212 VIP", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "althair", "name": "ALthair", "sizes": [{"size": "100 مل", "price": 700}, {"size": "50 مل", "price": 350}]}, {"slug": "ameer-al-oud", "name": "أمير العود", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "baccarat-rouge-540", "name": "Baccarat Rouge 540", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "bianco-latte", "name": "Bianco Latte", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "black-afgano", "name": "بلاك أفغانو", "sizes": [{"size": "100 مل", "price": 900}, {"size": "50 مل", "price": 450}]}, {"slug": "burberry-her", "name": "Burberry Her", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "dii", "name": "Dii", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "dior-homme-parfum", "name": "Dior Homme Parfum", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "diva", "name": "ديڤا", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "elie-saab", "name": "Elie Saab", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "flame-of-tropics", "name": "Flame of Tropics", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "good-girl", "name": "Good Girl", "sizes": [{"size": "100 مل", "price": 500}, {"size": "50 مل", "price": 250}]}, {"slug": "gucci-rush", "name": "Gucci Rush", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "invictus", "name": "Invictus", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "la-vie-est-belle", "name": "La Vie Est Belle", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "le-male-elixir", "name": "Le Male Elixir", "sizes": [{"size": "100 مل", "price": 700}, {"size": "50 مل", "price": 350}]}, {"slug": "libre", "name": "Libre", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "megamare", "name": "Megamare", "sizes": [{"size": "100 مل", "price": 700}, {"size": "50 مل", "price": 350}]}, {"slug": "mid-g", "name": "Mid - G", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "midnight-rose", "name": "Midnight Rose", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "murelle-men", "name": "موريل مان", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "murelle-sport", "name": "Murelle Sport", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "murelle-vip", "name": "Murelle VIP", "sizes": [{"size": "100 مل", "price": 700}, {"size": "50 مل", "price": 350}]}, {"slug": "musk-abyad", "name": "مسك أبيض", "sizes": [{"size": "ربع تولة", "price": 50}, {"size": "زجاجة 50 مل", "price": 250}]}, {"slug": "musk-roman", "name": "مسك رمان", "sizes": [{"size": "ربع تولة", "price": 50}, {"size": "زجاجة 50 مل", "price": 250}]}, {"slug": "musk-sabaya", "name": "مسك صبايا", "sizes": [{"size": "ربع تولة", "price": 50}, {"size": "زجاجة 50 مل", "price": 250}]}, {"slug": "musk-tahara", "name": "مسك الطهارة", "sizes": [{"size": "ربع تولة", "price": 50}, {"size": "زجاجة 50 مل", "price": 250}]}, {"slug": "ombre-nomade", "name": "Ombre Nomade", "sizes": [{"size": "50 مل", "price": 350}, {"size": "100 مل", "price": 700}]}, {"slug": "one-million", "name": "One Million", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "spiced-frost", "name": "Spiced Frost", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "stronger-with-you", "name": "Stronger With You", "sizes": [{"size": "50 مل", "price": 400}, {"size": "100 مل", "price": 800}]}, {"slug": "suv", "name": "SUV", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "swye", "name": "S.W.Y.E", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "velvet-cask", "name": "Velvet Cask", "sizes": [{"size": "100 مل", "price": 700}, {"size": "50 مل", "price": 350}]}, {"slug": "versace-bright-crystal", "name": "Versace Bright Crystal", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}, {"slug": "violia", "name": "Violia", "sizes": [{"size": "100 مل", "price": 600}, {"size": "50 مل", "price": 300}]}];
+var GOVS = ['الغربية','القاهرة','الجيزة','الإسكندرية','الدقهلية','الشرقية','القليوبية','المنوفية','البحيرة','كفر الشيخ','دمياط','بورسعيد','الإسماعيلية','السويس','الفيوم','بني سويف','المنيا','أسيوط','سوهاج','قنا','الأقصر','أسوان','البحر الأحمر','مطروح','شمال سيناء','جنوب سيناء','الوادي الجديد'];
+
+var productSel = document.getElementById('product');
+var sizeSel = document.getElementById('size');
+var qtyInp = document.getElementById('qty');
+var totalEl = document.getElementById('total');
+var govSel = document.getElementById('gov');
+
+GOVS.forEach(function(g){ var o=document.createElement('option'); o.value=g; o.textContent=g; govSel.appendChild(o); });
+
+PRODUCTS.forEach(function(p){ var o=document.createElement('option'); o.value=p.slug; o.textContent=p.name; productSel.appendChild(o); });
+
+function fmt(n){ return n.toLocaleString('ar-EG') + ' جنيه'; }
+
+function fillSizes(){
+  var p = PRODUCTS.find(function(x){ return x.slug === productSel.value; }) || PRODUCTS[0];
+  sizeSel.innerHTML = '';
+  p.sizes.forEach(function(s){ var o=document.createElement('option'); o.value=s.size; o.textContent=s.size + ' — ' + fmt(s.price); o.dataset.price=s.price; sizeSel.appendChild(o); });
+  updateTotal();
+}
+function currentPrice(){
+  var o = sizeSel.options[sizeSel.selectedIndex];
+  return o ? parseInt(o.dataset.price,10) : 0;
+}
+function updateTotal(){
+  var q = Math.max(1, parseInt(qtyInp.value||'1',10));
+  var pr = currentPrice();
+  totalEl.textContent = pr ? fmt(pr*q) : '—';
+}
+
+productSel.addEventListener('change', fillSizes);
+sizeSel.addEventListener('change', updateTotal);
+qtyInp.addEventListener('input', updateTotal);
+
+var params = new URLSearchParams(location.search);
+if (params.get('p') && PRODUCTS.some(function(x){ return x.slug === params.get('p'); })) {
+  productSel.value = params.get('p');
+}
+fillSizes();
+document.getElementById('ts').value = String(Date.now());
+
+function digits(s){ return s.replace(/[٠-٩]/g, function(c){ return '٠١٢٣٤٥٦٧٨٩'.indexOf(c); }).replace(/\D/g,''); }
+
+function setInvalid(id, bad){ document.getElementById(id).classList.toggle('invalid', bad); return !bad; }
+
+document.getElementById('orderForm').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var name = document.getElementById('name').value.trim();
+  var phone = digits(document.getElementById('phone').value);
+  var gov = govSel.value;
+  var address = document.getElementById('address').value.trim();
+  var ok = true;
+  ok = setInvalid('f-name', name.length < 2) && ok;
+  ok = setInvalid('f-phone', !/^01\d{9}$/.test(phone)) && ok;
+  ok = setInvalid('f-gov', !gov) && ok;
+  ok = setInvalid('f-address', address.length < 8) && ok;
+  if (!ok) return;
+
+  var p = PRODUCTS.find(function(x){ return x.slug === productSel.value; });
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true; btn.textContent = 'جاري الإرسال...';
+  document.getElementById('failBox').style.display = 'none';
+
+  var body = new URLSearchParams({
+    name: name,
+    phone: phone,
+    gov: gov,
+    city: document.getElementById('city').value.trim(),
+    address: address,
+    product: p.name,
+    slug: p.slug,
+    size: sizeSel.value,
+    qty: String(Math.max(1, parseInt(qtyInp.value||'1',10))),
+    price: String(currentPrice()),
+    notes: document.getElementById('notes').value.trim(),
+    company: document.getElementById('company').value,
+    ts: document.getElementById('ts').value
+  });
+
+  fetch(SCRIPT_URL, { method:'POST', mode:'no-cors', body: body })
+    .then(function(){
+      document.getElementById('orderForm').style.display = 'none';
+      document.getElementById('successBox').style.display = 'block';
+      window.scrollTo({top:0, behavior:'smooth'});
+    })
+    .catch(function(){
+      document.getElementById('failBox').style.display = 'block';
+      btn.disabled = false; btn.textContent = 'تأكيد الأوردر';
+    });
+});
+</script>
+
+<nav class="bottomnav" aria-label="تنقل سريع">
+<a href="index.html"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V21h13V9.5"/></svg><span>الرئيسية</span></a>
+<a href="index.html#catalog"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span>العطور</span></a>
+<a href="order.html" class="on"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>اطلب</span></a>
+<a href="https://wa.me/201019098061" class="wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg><span>واتساب</span></a>
+</nav>
+</body>
+</html>
