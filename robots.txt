@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://murelleperfume.github.io/sitemap.xml
