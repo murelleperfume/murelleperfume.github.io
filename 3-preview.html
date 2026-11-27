@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>معاينة</title>
+<script>window.MURELLE_MANUAL=1;</script><script src="1-catalog.js"></script>
+<script>
+fetch('index.html').then(function(r){return r.text()}).then(function(h){
+ var d=new DOMParser().parseFromString(h,'text/html');
+ murelleLoad(d).then(function(n){
+  var b=d.createElement('div');b.style.cssText='position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#111;color:#fff;text-align:center;padding:6px;font:13px sans-serif';
+  b.textContent='معاينة: الأسعار من الشيت ('+n+' عطر)';d.body.appendChild(b);
+  var base=d.createElement('base');base.href=location.origin+'/';d.head.insertBefore(base,d.head.firstChild);
+  document.open();document.write('<!doctype html>'+d.documentElement.outerHTML);document.close();});
+});
+</script>
